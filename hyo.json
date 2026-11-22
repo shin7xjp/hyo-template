@@ -3,7 +3,7 @@
   "package": "com.hyo.app",
   "version": "0.1.0",
   "description": "Hyo Mobile Application Starter",
-  "entrypoint": "main.lua",
+  "entrypoint": "src/main.lua",
   "templateVersion": "0.1.0",
   "platforms": [
     "android"

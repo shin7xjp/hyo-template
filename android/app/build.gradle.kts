@@ -12,6 +12,13 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
+    sourceSets {
+        getByName("main") {
+            // Include both app assets (e.g. fonts) and project root src/
+            assets.srcDirs("src/main/assets", "../../src")
+        }
+    }
+
     defaultConfig {
         applicationId = "com.hyo.app"
         minSdk = 23

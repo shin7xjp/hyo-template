@@ -166,35 +166,11 @@ hyo.navigation.route("home", function()
     })
 end)
 
+local SettingsScreen = require("screens.settings")
+
 -- Screen: Settings
 hyo.navigation.route("settings", function()
-    return Column({
-        padding = 24,
-        spacing = 16,
-        background = "#0b0f19",
-        children = {
-            Text({
-                text = "Application Settings",
-                size = 24,
-                weight = "bold",
-                color = "#ffffff"
-            }),
-            Text({
-                text = "Multi-screen route navigation with backward history stack.",
-                size = 14,
-                color = "#94a3b8"
-            }),
-            Divider({ thickness = 1, background = "#26324b" }),
-            Button({
-                text = "<- Back to Dashboard",
-                background = "#2563eb",
-                size = 14,
-                onClick = function()
-                    hyo.navigation.pop()
-                end
-            })
-        }
-    })
+    return SettingsScreen()
 end)
 
 -- App entrypoint
