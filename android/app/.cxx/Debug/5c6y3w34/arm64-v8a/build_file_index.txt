@@ -1,2 +1,0 @@
-/home/doyun/dev/hyo/hyo-core/CMakeLists.txt
-/home/doyun/dev/hyo/hyo-template/android/CMakeLists.txt

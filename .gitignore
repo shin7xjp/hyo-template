@@ -1,1 +1,42 @@
-android/.gradle
+# Android Build Artifacts & Caches
+.gradle/
+**/android/.gradle/
+**/android/build/
+**/android/app/build/
+**/build/
+build/
+
+# Android NDK / CMake Build Outputs
+.cxx/
+**/android/app/.cxx/
+**/android/.cxx/
+**/.cxx/
+
+# Compiled Binaries, Archives & Libraries
+*.so
+*.a
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+*.jar
+!android/gradle/wrapper/gradle-wrapper.jar
+
+# Android SDK & IDE Configuration
+local.properties
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+*~
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Log Files & Caches
+*.log
+*.tmp
+.cache/
