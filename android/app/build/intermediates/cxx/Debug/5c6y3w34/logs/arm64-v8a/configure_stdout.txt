@@ -1,0 +1,5 @@
+-- Using Hyo Core from: /home/doyun/dev/hyo/hyo-template/android/../../hyo-core
+-- Skia Android (arm64-v8a) found: /home/doyun/dev/skia/android/libs/arm64-v8a/libskia.a
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a

@@ -1,0 +1,192 @@
+[
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/home/doyun/dev/lua-5.5.1/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -w -o hyo-core-build/CMakeFiles/lua_static.dir/home/doyun/dev/lua-5.5.1/src/lapi.c.o -c /home/doyun/dev/lua-5.5.1/src/lapi.c",
+  "file": "/home/doyun/dev/lua-5.5.1/src/lapi.c"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/home/doyun/dev/lua-5.5.1/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -w -o hyo-core-build/CMakeFiles/lua_static.dir/home/doyun/dev/lua-5.5.1/src/lauxlib.c.o -c /home/doyun/dev/lua-5.5.1/src/lauxlib.c",
+  "file": "/home/doyun/dev/lua-5.5.1/src/lauxlib.c"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/home/doyun/dev/lua-5.5.1/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -w -o hyo-core-build/CMakeFiles/lua_static.dir/home/doyun/dev/lua-5.5.1/src/lbaselib.c.o -c /home/doyun/dev/lua-5.5.1/src/lbaselib.c",
+  "file": "/home/doyun/dev/lua-5.5.1/src/lbaselib.c"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/home/doyun/dev/lua-5.5.1/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -w -o hyo-core-build/CMakeFiles/lua_static.dir/home/doyun/dev/lua-5.5.1/src/lcode.c.o -c /home/doyun/dev/lua-5.5.1/src/lcode.c",
+  "file": "/home/doyun/dev/lua-5.5.1/src/lcode.c"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/home/doyun/dev/lua-5.5.1/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -w -o hyo-core-build/CMakeFiles/lua_static.dir/home/doyun/dev/lua-5.5.1/src/lcorolib.c.o -c /home/doyun/dev/lua-5.5.1/src/lcorolib.c",
+  "file": "/home/doyun/dev/lua-5.5.1/src/lcorolib.c"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/home/doyun/dev/lua-5.5.1/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -w -o hyo-core-build/CMakeFiles/lua_static.dir/home/doyun/dev/lua-5.5.1/src/lctype.c.o -c /home/doyun/dev/lua-5.5.1/src/lctype.c",
+  "file": "/home/doyun/dev/lua-5.5.1/src/lctype.c"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/home/doyun/dev/lua-5.5.1/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -w -o hyo-core-build/CMakeFiles/lua_static.dir/home/doyun/dev/lua-5.5.1/src/ldblib.c.o -c /home/doyun/dev/lua-5.5.1/src/ldblib.c",
+  "file": "/home/doyun/dev/lua-5.5.1/src/ldblib.c"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/home/doyun/dev/lua-5.5.1/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -w -o hyo-core-build/CMakeFiles/lua_static.dir/home/doyun/dev/lua-5.5.1/src/ldebug.c.o -c /home/doyun/dev/lua-5.5.1/src/ldebug.c",
+  "file": "/home/doyun/dev/lua-5.5.1/src/ldebug.c"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/home/doyun/dev/lua-5.5.1/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -w -o hyo-core-build/CMakeFiles/lua_static.dir/home/doyun/dev/lua-5.5.1/src/ldo.c.o -c /home/doyun/dev/lua-5.5.1/src/ldo.c",
+  "file": "/home/doyun/dev/lua-5.5.1/src/ldo.c"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/home/doyun/dev/lua-5.5.1/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -w -o hyo-core-build/CMakeFiles/lua_static.dir/home/doyun/dev/lua-5.5.1/src/ldump.c.o -c /home/doyun/dev/lua-5.5.1/src/ldump.c",
+  "file": "/home/doyun/dev/lua-5.5.1/src/ldump.c"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/home/doyun/dev/lua-5.5.1/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -w -o hyo-core-build/CMakeFiles/lua_static.dir/home/doyun/dev/lua-5.5.1/src/lfunc.c.o -c /home/doyun/dev/lua-5.5.1/src/lfunc.c",
+  "file": "/home/doyun/dev/lua-5.5.1/src/lfunc.c"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/home/doyun/dev/lua-5.5.1/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -w -o hyo-core-build/CMakeFiles/lua_static.dir/home/doyun/dev/lua-5.5.1/src/lgc.c.o -c /home/doyun/dev/lua-5.5.1/src/lgc.c",
+  "file": "/home/doyun/dev/lua-5.5.1/src/lgc.c"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/home/doyun/dev/lua-5.5.1/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -w -o hyo-core-build/CMakeFiles/lua_static.dir/home/doyun/dev/lua-5.5.1/src/linit.c.o -c /home/doyun/dev/lua-5.5.1/src/linit.c",
+  "file": "/home/doyun/dev/lua-5.5.1/src/linit.c"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/home/doyun/dev/lua-5.5.1/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -w -o hyo-core-build/CMakeFiles/lua_static.dir/home/doyun/dev/lua-5.5.1/src/liolib.c.o -c /home/doyun/dev/lua-5.5.1/src/liolib.c",
+  "file": "/home/doyun/dev/lua-5.5.1/src/liolib.c"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/home/doyun/dev/lua-5.5.1/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -w -o hyo-core-build/CMakeFiles/lua_static.dir/home/doyun/dev/lua-5.5.1/src/llex.c.o -c /home/doyun/dev/lua-5.5.1/src/llex.c",
+  "file": "/home/doyun/dev/lua-5.5.1/src/llex.c"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/home/doyun/dev/lua-5.5.1/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -w -o hyo-core-build/CMakeFiles/lua_static.dir/home/doyun/dev/lua-5.5.1/src/lmathlib.c.o -c /home/doyun/dev/lua-5.5.1/src/lmathlib.c",
+  "file": "/home/doyun/dev/lua-5.5.1/src/lmathlib.c"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/home/doyun/dev/lua-5.5.1/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -w -o hyo-core-build/CMakeFiles/lua_static.dir/home/doyun/dev/lua-5.5.1/src/lmem.c.o -c /home/doyun/dev/lua-5.5.1/src/lmem.c",
+  "file": "/home/doyun/dev/lua-5.5.1/src/lmem.c"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/home/doyun/dev/lua-5.5.1/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -w -o hyo-core-build/CMakeFiles/lua_static.dir/home/doyun/dev/lua-5.5.1/src/loadlib.c.o -c /home/doyun/dev/lua-5.5.1/src/loadlib.c",
+  "file": "/home/doyun/dev/lua-5.5.1/src/loadlib.c"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/home/doyun/dev/lua-5.5.1/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -w -o hyo-core-build/CMakeFiles/lua_static.dir/home/doyun/dev/lua-5.5.1/src/lobject.c.o -c /home/doyun/dev/lua-5.5.1/src/lobject.c",
+  "file": "/home/doyun/dev/lua-5.5.1/src/lobject.c"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/home/doyun/dev/lua-5.5.1/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -w -o hyo-core-build/CMakeFiles/lua_static.dir/home/doyun/dev/lua-5.5.1/src/lopcodes.c.o -c /home/doyun/dev/lua-5.5.1/src/lopcodes.c",
+  "file": "/home/doyun/dev/lua-5.5.1/src/lopcodes.c"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/home/doyun/dev/lua-5.5.1/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -w -o hyo-core-build/CMakeFiles/lua_static.dir/home/doyun/dev/lua-5.5.1/src/loslib.c.o -c /home/doyun/dev/lua-5.5.1/src/loslib.c",
+  "file": "/home/doyun/dev/lua-5.5.1/src/loslib.c"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/home/doyun/dev/lua-5.5.1/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -w -o hyo-core-build/CMakeFiles/lua_static.dir/home/doyun/dev/lua-5.5.1/src/lparser.c.o -c /home/doyun/dev/lua-5.5.1/src/lparser.c",
+  "file": "/home/doyun/dev/lua-5.5.1/src/lparser.c"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/home/doyun/dev/lua-5.5.1/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -w -o hyo-core-build/CMakeFiles/lua_static.dir/home/doyun/dev/lua-5.5.1/src/lstate.c.o -c /home/doyun/dev/lua-5.5.1/src/lstate.c",
+  "file": "/home/doyun/dev/lua-5.5.1/src/lstate.c"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/home/doyun/dev/lua-5.5.1/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -w -o hyo-core-build/CMakeFiles/lua_static.dir/home/doyun/dev/lua-5.5.1/src/lstring.c.o -c /home/doyun/dev/lua-5.5.1/src/lstring.c",
+  "file": "/home/doyun/dev/lua-5.5.1/src/lstring.c"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/home/doyun/dev/lua-5.5.1/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -w -o hyo-core-build/CMakeFiles/lua_static.dir/home/doyun/dev/lua-5.5.1/src/lstrlib.c.o -c /home/doyun/dev/lua-5.5.1/src/lstrlib.c",
+  "file": "/home/doyun/dev/lua-5.5.1/src/lstrlib.c"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/home/doyun/dev/lua-5.5.1/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -w -o hyo-core-build/CMakeFiles/lua_static.dir/home/doyun/dev/lua-5.5.1/src/ltable.c.o -c /home/doyun/dev/lua-5.5.1/src/ltable.c",
+  "file": "/home/doyun/dev/lua-5.5.1/src/ltable.c"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/home/doyun/dev/lua-5.5.1/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -w -o hyo-core-build/CMakeFiles/lua_static.dir/home/doyun/dev/lua-5.5.1/src/ltablib.c.o -c /home/doyun/dev/lua-5.5.1/src/ltablib.c",
+  "file": "/home/doyun/dev/lua-5.5.1/src/ltablib.c"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/home/doyun/dev/lua-5.5.1/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -w -o hyo-core-build/CMakeFiles/lua_static.dir/home/doyun/dev/lua-5.5.1/src/ltm.c.o -c /home/doyun/dev/lua-5.5.1/src/ltm.c",
+  "file": "/home/doyun/dev/lua-5.5.1/src/ltm.c"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/home/doyun/dev/lua-5.5.1/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -w -o hyo-core-build/CMakeFiles/lua_static.dir/home/doyun/dev/lua-5.5.1/src/lundump.c.o -c /home/doyun/dev/lua-5.5.1/src/lundump.c",
+  "file": "/home/doyun/dev/lua-5.5.1/src/lundump.c"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/home/doyun/dev/lua-5.5.1/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -w -o hyo-core-build/CMakeFiles/lua_static.dir/home/doyun/dev/lua-5.5.1/src/lutf8lib.c.o -c /home/doyun/dev/lua-5.5.1/src/lutf8lib.c",
+  "file": "/home/doyun/dev/lua-5.5.1/src/lutf8lib.c"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/home/doyun/dev/lua-5.5.1/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -w -o hyo-core-build/CMakeFiles/lua_static.dir/home/doyun/dev/lua-5.5.1/src/lvm.c.o -c /home/doyun/dev/lua-5.5.1/src/lvm.c",
+  "file": "/home/doyun/dev/lua-5.5.1/src/lvm.c"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -I/home/doyun/dev/lua-5.5.1/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -w -o hyo-core-build/CMakeFiles/lua_static.dir/home/doyun/dev/lua-5.5.1/src/lzio.c.o -c /home/doyun/dev/lua-5.5.1/src/lzio.c",
+  "file": "/home/doyun/dev/lua-5.5.1/src/lzio.c"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dhyo_EXPORTS -I/home/doyun/dev/hyo/hyo-core/include -I/home/doyun/dev/hyo/hyo-core/src -I/home/doyun/dev/lua-5.5.1/src -isystem /home/doyun/dev/skia -isystem /home/doyun/dev/skia/include/core -isystem /home/doyun/dev/skia/include/encode -isystem /home/doyun/dev/skia/include/effects -isystem /home/doyun/dev/skia/include/gpu -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -std=c++20 -fno-limit-debug-info  -fPIC -std=c++20 -o hyo-core-build/CMakeFiles/hyo.dir/src/ui/color.cpp.o -c /home/doyun/dev/hyo/hyo-core/src/ui/color.cpp",
+  "file": "/home/doyun/dev/hyo/hyo-core/src/ui/color.cpp"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dhyo_EXPORTS -I/home/doyun/dev/hyo/hyo-core/include -I/home/doyun/dev/hyo/hyo-core/src -I/home/doyun/dev/lua-5.5.1/src -isystem /home/doyun/dev/skia -isystem /home/doyun/dev/skia/include/core -isystem /home/doyun/dev/skia/include/encode -isystem /home/doyun/dev/skia/include/effects -isystem /home/doyun/dev/skia/include/gpu -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -std=c++20 -fno-limit-debug-info  -fPIC -std=c++20 -o hyo-core-build/CMakeFiles/hyo.dir/src/layout/layout_engine.cpp.o -c /home/doyun/dev/hyo/hyo-core/src/layout/layout_engine.cpp",
+  "file": "/home/doyun/dev/hyo/hyo-core/src/layout/layout_engine.cpp"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dhyo_EXPORTS -I/home/doyun/dev/hyo/hyo-core/include -I/home/doyun/dev/hyo/hyo-core/src -I/home/doyun/dev/lua-5.5.1/src -isystem /home/doyun/dev/skia -isystem /home/doyun/dev/skia/include/core -isystem /home/doyun/dev/skia/include/encode -isystem /home/doyun/dev/skia/include/effects -isystem /home/doyun/dev/skia/include/gpu -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -std=c++20 -fno-limit-debug-info  -fPIC -std=c++20 -o hyo-core-build/CMakeFiles/hyo.dir/src/rendering/renderer.cpp.o -c /home/doyun/dev/hyo/hyo-core/src/rendering/renderer.cpp",
+  "file": "/home/doyun/dev/hyo/hyo-core/src/rendering/renderer.cpp"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dhyo_EXPORTS -I/home/doyun/dev/hyo/hyo-core/include -I/home/doyun/dev/hyo/hyo-core/src -I/home/doyun/dev/lua-5.5.1/src -isystem /home/doyun/dev/skia -isystem /home/doyun/dev/skia/include/core -isystem /home/doyun/dev/skia/include/encode -isystem /home/doyun/dev/skia/include/effects -isystem /home/doyun/dev/skia/include/gpu -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -std=c++20 -fno-limit-debug-info  -fPIC -std=c++20 -o hyo-core-build/CMakeFiles/hyo.dir/src/runtime/runtime.cpp.o -c /home/doyun/dev/hyo/hyo-core/src/runtime/runtime.cpp",
+  "file": "/home/doyun/dev/hyo/hyo-core/src/runtime/runtime.cpp"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dhyo_EXPORTS -I/home/doyun/dev/hyo/hyo-core/include -I/home/doyun/dev/hyo/hyo-core/src -I/home/doyun/dev/lua-5.5.1/src -isystem /home/doyun/dev/skia -isystem /home/doyun/dev/skia/include/core -isystem /home/doyun/dev/skia/include/encode -isystem /home/doyun/dev/skia/include/effects -isystem /home/doyun/dev/skia/include/gpu -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -std=c++20 -fno-limit-debug-info  -fPIC -std=c++20 -o hyo-core-build/CMakeFiles/hyo.dir/src/runtime/engine.cpp.o -c /home/doyun/dev/hyo/hyo-core/src/runtime/engine.cpp",
+  "file": "/home/doyun/dev/hyo/hyo-core/src/runtime/engine.cpp"
+},
+{
+  "directory": "/home/doyun/dev/hyo/hyo-template/android/app/.cxx/Debug/5c6y3w34/arm64-v8a",
+  "command": "/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android23 --sysroot=/home/doyun/Android-SDK/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dhyo_EXPORTS -I/home/doyun/dev/hyo/hyo-core/include -I/home/doyun/dev/hyo/hyo-core/src -I/home/doyun/dev/lua-5.5.1/src -isystem /home/doyun/dev/skia -isystem /home/doyun/dev/skia/include/core -isystem /home/doyun/dev/skia/include/encode -isystem /home/doyun/dev/skia/include/effects -isystem /home/doyun/dev/skia/include/gpu -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -std=c++20 -fno-limit-debug-info  -fPIC -std=c++20 -o hyo-core-build/CMakeFiles/hyo.dir/src/platform/android/hyo_jni.cpp.o -c /home/doyun/dev/hyo/hyo-core/src/platform/android/hyo_jni.cpp",
+  "file": "/home/doyun/dev/hyo/hyo-core/src/platform/android/hyo_jni.cpp"
+}
+]
