@@ -1,0 +1,10 @@
+{
+  "name": "hyo-storage",
+  "version": "0.1.0",
+  "description": "Key-value persistent storage and file caching for Hyo",
+  "entrypoint": "init.lua",
+  "dependencies": {
+    "hyo-core": ">=0.1.0"
+  }
+}
+

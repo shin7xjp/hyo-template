@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.Choreographer;
 import android.view.MotionEvent;
 import android.view.Surface;
 import android.view.SurfaceHolder;
@@ -33,6 +34,8 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
     private SurfaceView surfaceView;
     private EditText hiddenInput;
     private boolean isUpdatingText = false;
+    private Choreographer.FrameCallback frameCallback;
+    private long lastFrameTimeNanos = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -105,6 +108,22 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
         float density = getResources().getDisplayMetrics().density;
         Log.i(TAG, "Screen density: " + density);
         nativeInit(getAssets(), density);
+
+        // Continuous Choreographer frame scheduler for animations
+        frameCallback = new Choreographer.FrameCallback() {
+            @Override
+            public void doFrame(long frameTimeNanos) {
+                if (lastFrameTimeNanos > 0) {
+                    float dt = (float) ((frameTimeNanos - lastFrameTimeNanos) / 1_000_000_000.0);
+                    // Clamp dt to avoid huge jumps if paused
+                    if (dt > 0.1f) dt = 0.016f;
+                    nativeTickAnimation(dt);
+                }
+                lastFrameTimeNanos = frameTimeNanos;
+                Choreographer.getInstance().postFrameCallback(this);
+            }
+        };
+        Choreographer.getInstance().postFrameCallback(frameCallback);
     }
 
     public void showSoftKeyboard(final String initialText) {
@@ -168,4 +187,5 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
     private native void nativeOnTouchEvent(int action, float x, float y);
     private native void nativeOnTextInput(String text);
     private native void nativeDismissKeyboard();
+    private native void nativeTickAnimation(float dt);
 }

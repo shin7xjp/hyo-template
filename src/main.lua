@@ -1,179 +1,250 @@
--- main.lua — Hyo Mobile Application (Phase 6 Full Framework)
+-- src/main.lua — Clean Starter Application for Hyo Framework
 local hyo = require("hyo")
 
+-- Official Modular Packages
+local UI = require("hyo-ui")
+local Navigation = require("hyo-navigation")
+local Storage = require("hyo-storage")
+
 hyo.create({
-    name = "My Application",
-    title = "My Application",
+    name = "Hyo Starter",
+    title = "Hyo Starter",
     version = "1.0.0"
 })
 
--- Reactive App State
+-- ─── Reactive Application State ──────────────────────────
 local count = State(0)
-local noteInput = ""
-local savedNote = State(hyo.storage.get("user_note", "No note saved yet."))
-local networkStatus = State("Tap below to test HTTP request.")
+local noteText = State(Storage.get("starter_note", "Welcome to Hyo!"))
+local currentInput = ""
 
--- Screen: Home
-hyo.navigation.route("home", function()
-    return ScrollView({
-        background = "#0b0f19",
+-- ─── Screen: Home ────────────────────────────────────────
+Navigation.route("home", function()
+    local theme = hyo.theme:colors()
+
+    return Column({
+        background = theme.background,
         children = {
-            Column({
-                padding = 16,
-                spacing = 16,
+            -- Application Header Bar
+            UI.AppBar({
+                title = "Hyo Mobile App",
+                background = theme.surface,
+                trailing = Button({
+                    text = "About →",
+                    size = 13,
+                    background = theme.primary,
+                    radius = 8,
+                    padding = { top = 6, bottom = 6, left = 12, right = 12 },
+                    onClick = function()
+                        Navigation.push("about")
+                    end
+                })
+            }),
 
+            -- Scrollable Main Content
+            ScrollView({
                 children = {
-                    -- Header Card
-                    Card({
-                        padding = 18,
-                        spacing = 6,
-                        background = "#161e2e",
-                        radius = 16,
-                        border = { color = "#26324b", width = 1 },
+                    Column({
+                        padding = { top = 20, bottom = 40, left = 16, right = 16 },
+                        spacing = 16,
                         children = {
-                            Text({
-                                text = "HYO MOBILE FRAMEWORK",
-                                size = 20,
-                                weight = "bold",
-                                color = "#38bdf8"
-                            }),
-                            Text({
-                                text = "Platform: " .. hyo.device.platform .. "  |  Density: " .. string.format("%.1f", hyo.device.screen.density()) .. "x",
-                                size = 13,
-                                color = "#94a3b8"
-                            })
-                        }
-                    }),
-
-                    -- Card 1: Reactive State
-                    Card({
-                        padding = 18,
-                        spacing = 14,
-                        background = "#161e2e",
-                        radius = 16,
-                        border = { color = "#1e3a8a", width = 1 },
-                        children = {
-                            Text({
-                                text = "1. Reactive State & Events",
-                                size = 16,
-                                weight = "bold",
-                                color = "#f8fafc"
-                            }),
-                            Text({
-                                text = function()
-                                    return "Taps Count: " .. tostring(count:get())
-                                end,
-                                size = 18,
-                                weight = "bold",
-                                color = "#60a5fa"
-                            }),
-                            Row({
-                                spacing = 12,
+                            -- Welcome Card
+                            Card({
+                                background = theme.primary,
+                                radius = 16,
+                                padding = 20,
+                                spacing = 8,
                                 children = {
-                                    Button({
-                                        text = "+ Tap Count",
-                                        background = "#2563eb",
+                                    Text({
+                                        text = "Hello, Developer! 👋",
+                                        size = 22,
+                                        weight = "bold",
+                                        color = "#ffffff"
+                                    }),
+                                    Text({
+                                        text = "You are running Hyo with native C++20, Skia 2D rendering, and Lua 5.5.1 scripting.",
                                         size = 14,
-                                        onClick = function()
-                                            count:set(count:get() + 1)
+                                        color = "#e0e7ff"
+                                    }),
+                                }
+                            }),
+
+                            -- Section: Reactive Counter
+                            UI.SectionHeader({ title = "Interactive Counter" }),
+
+                            Card({
+                                background = theme.surface,
+                                radius = 14,
+                                padding = 16,
+                                spacing = 12,
+                                border = { color = theme.border, width = 1 },
+                                children = {
+                                    Text({
+                                        text = function()
+                                            return "Current Count: " .. count:get()
+                                        end,
+                                        size = 18,
+                                        weight = "bold",
+                                        color = theme.textPrimary,
+                                        alignment = "center"
+                                    }),
+                                    Row({
+                                        spacing = 12,
+                                        alignment = "center",
+                                        children = {
+                                            Button({
+                                                text = "− Decrease",
+                                                background = theme.surfaceVariant,
+                                                size = 13,
+                                                radius = 8,
+                                                padding = { top = 10, bottom = 10, left = 16, right = 16 },
+                                                onClick = function()
+                                                    count:set(count:get() - 1)
+                                                end
+                                            }),
+                                            Button({
+                                                text = "+ Increase",
+                                                background = theme.primary,
+                                                size = 13,
+                                                radius = 8,
+                                                padding = { top = 10, bottom = 10, left = 16, right = 16 },
+                                                onClick = function()
+                                                    count:set(count:get() + 1)
+                                                end
+                                            }),
+                                            Button({
+                                                text = "Reset",
+                                                background = "#ef4444",
+                                                size = 13,
+                                                radius = 8,
+                                                padding = { top = 10, bottom = 10, left = 14, right = 14 },
+                                                onClick = function()
+                                                    count:set(0)
+                                                end
+                                            }),
+                                        }
+                                    })
+                                }
+                            }),
+
+                            -- Section: Persistent Storage
+                            UI.SectionHeader({ title = "Persistent Storage" }),
+
+                            Card({
+                                background = theme.surface,
+                                radius = 14,
+                                padding = 16,
+                                spacing = 12,
+                                border = { color = theme.border, width = 1 },
+                                children = {
+                                    TextField({
+                                        placeholder = "Type a note to save...",
+                                        size = 14,
+                                        background = theme.surfaceVariant,
+                                        radius = 8,
+                                        padding = { top = 10, bottom = 10, left = 12, right = 12 },
+                                        onChange = function(text)
+                                            currentInput = text
                                         end
                                     }),
                                     Button({
-                                        text = "Reset",
-                                        background = "#dc2626",
-                                        size = 14,
+                                        text = "Save Note",
+                                        background = "#10b981",
+                                        size = 13,
+                                        radius = 8,
+                                        padding = { top = 10, bottom = 10, left = 16, right = 16 },
                                         onClick = function()
-                                            count:set(0)
+                                            if currentInput ~= "" then
+                                                Storage.set("starter_note", currentInput)
+                                                noteText:set(currentInput)
+                                            end
                                         end
+                                    }),
+                                    Text({
+                                        text = function()
+                                            return "Saved Note: " .. noteText:get()
+                                        end,
+                                        size = 13,
+                                        color = theme.textSecondary
                                     })
                                 }
-                            })
-                        }
-                    }),
-                    -- Card 3: Network Engine
-                    Card({
-                        padding = 18,
-                        spacing = 14,
-                        background = "#161e2e",
-                        radius = 16,
-                        border = { color = "#92400e", width = 1 },
-                        children = {
-                            Text({
-                                text = "3. HTTP & HTTPS Network Engine",
-                                size = 16,
-                                weight = "bold",
-                                color = "#f8fafc"
                             }),
-                            Text({
-                                text = "Endpoint: https://httpbin.org/get",
-                                size = 13,
-                                color = "#94a3b8"
-                            }),
-                            Button({
-                                text = "Fetch HTTP Data",
-                                background = "#d97706",
-                                size = 14,
-                                onClick = function()
-                                    networkStatus:set("Fetching data from httpbin.org...")
-                                    local resp = hyo.network.get("https://httpbin.org/get", 6000)
-                                    if resp.status == 200 then
-                                        networkStatus:set("HTTP 200 OK — Received " .. string.len(resp.body) .. " bytes!")
-                                    else
-                                        local errDesc = (resp.error ~= "") and resp.error or ("HTTP " .. tostring(resp.status))
-                                        networkStatus:set("Request failed: " .. errDesc)
-                                    end
-                                end
-                            }),
-                            Text({
-                                text = function()
-                                    return "Status: " .. networkStatus:get()
-                                end,
-                                size = 13,
-                                color = "#fde68a"
-                            })
-                        }
-                    }),
 
-                    -- Card 4: Screen Navigation
-                    Card({
-                        padding = 18,
-                        spacing = 14,
-                        background = "#161e2e",
-                        radius = 16,
-                        border = { color = "#5b21b6", width = 1 },
-                        children = {
-                            Text({
-                                text = "4. Multi-Screen Navigation",
-                                size = 16,
-                                weight = "bold",
-                                color = "#f8fafc"
-                            }),
-                            Button({
-                                text = "Open App Settings ->",
-                                background = "#7c3aed",
-                                size = 14,
-                                onClick = function()
-                                    hyo.navigation.push("settings")
-                                end
-                            })
+                            Spacer({ height = 20 }),
                         }
-                    }),
-
-                    Spacer({ height = 24 })
+                    })
                 }
             })
         }
     })
 end)
 
-local SettingsScreen = require("screens.settings")
+-- ─── Screen: About ───────────────────────────────────────
+Navigation.route("about", function()
+    local theme = hyo.theme:colors()
 
--- Screen: Settings
-hyo.navigation.route("settings", function()
-    return SettingsScreen()
+    return Column({
+        background = theme.background,
+        children = {
+            UI.AppBar({
+                title = "About Hyo",
+                background = theme.surface,
+                leading = Button({
+                    text = "← Back",
+                    size = 14,
+                    background = "transparent",
+                    padding = 4,
+                    onClick = function()
+                        Navigation.pop()
+                    end
+                })
+            }),
+
+            ScrollView({
+                children = {
+                    Column({
+                        padding = { top = 20, bottom = 40, left = 16, right = 16 },
+                        spacing = 16,
+                        children = {
+                            Card({
+                                background = theme.surface,
+                                radius = 14,
+                                padding = 18,
+                                spacing = 10,
+                                border = { color = theme.border, width = 1 },
+                                children = {
+                                    Text({
+                                        text = "Framework Information",
+                                        size = 16,
+                                        weight = "bold",
+                                        color = theme.textPrimary
+                                    }),
+                                    Text({
+                                        text = "• Core: C++20 Runtime Engine\n• Graphics: Google Skia 2D Engine\n• Scripting: Lua 5.5.1 Environment\n• Packages: Official modular packages in packages/",
+                                        size = 13,
+                                        color = theme.textSecondary
+                                    }),
+                                    Spacer({ height = 6 }),
+                                    Button({
+                                        text = "Return to Home",
+                                        background = theme.primary,
+                                        size = 13,
+                                        radius = 8,
+                                        padding = { top = 10, bottom = 10, left = 16, right = 16 },
+                                        onClick = function()
+                                            Navigation.pop()
+                                        end
+                                    })
+                                }
+                            })
+                        }
+                    })
+                }
+            })
+        }
+    })
 end)
 
--- App entrypoint
+-- Start Application on Home screen
 hyo.run(function()
-    hyo.navigation.push("home")
+    Navigation.push("home")
 end)

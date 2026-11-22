@@ -14,8 +14,8 @@ android {
 
     sourceSets {
         getByName("main") {
-            // Include both app assets (e.g. fonts) and project root src/
-            assets.srcDirs("src/main/assets", "../../src")
+            // Include app assets (e.g. fonts), project root src/, and project root packages/
+            assets.srcDirs("src/main/assets", "../../src", "../../packages")
         }
     }
 

@@ -1,0 +1,13 @@
+{
+  "name": "hyo-network",
+  "version": "0.1.0",
+  "description": "REST HTTP client, fetch, and network utilities for Hyo",
+  "entrypoint": "init.lua",
+  "permissions": [
+    "android.permission.INTERNET"
+  ],
+  "dependencies": {
+    "hyo-core": ">=0.1.0"
+  }
+}
+

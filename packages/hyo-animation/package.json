@@ -1,0 +1,10 @@
+{
+  "name": "hyo-animation",
+  "version": "0.1.0",
+  "description": "Physics springs, curves, and tick interpolation for Hyo",
+  "entrypoint": "init.lua",
+  "dependencies": {
+    "hyo-core": ">=0.1.0"
+  }
+}
+

@@ -1,0 +1,10 @@
+{
+  "name": "hyo-navigation",
+  "version": "0.1.0",
+  "description": "Route stack, screen history, and navigation management for Hyo",
+  "entrypoint": "init.lua",
+  "dependencies": {
+    "hyo-core": ">=0.1.0"
+  }
+}
+
