@@ -22,6 +22,8 @@ build/
 *.class
 *.jar
 !android/gradle/wrapper/gradle-wrapper.jar
+packages/
+hyo.lock
 
 # Android SDK & IDE Configuration
 local.properties

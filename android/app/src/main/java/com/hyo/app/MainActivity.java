@@ -2,6 +2,8 @@ package com.hyo.app;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.res.Configuration;
+import android.graphics.Rect;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -12,6 +14,7 @@ import android.view.Surface;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
 import android.view.Window;
 import android.view.WindowManager;
 import android.view.inputmethod.EditorInfo;
@@ -107,7 +110,30 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
 
         float density = getResources().getDisplayMetrics().density;
         Log.i(TAG, "Screen density: " + density);
+        BridgeRegistry.initDefaults(this);
         nativeInit(getAssets(), density);
+
+        int nightMask = getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
+        nativeOnDarkModeChanged(nightMask == Configuration.UI_MODE_NIGHT_YES);
+
+        // Track soft keyboard height & safe-area insets for IME keyboard avoidance
+        rootLayout.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            private int lastKbHeight = -1;
+            @Override
+            public void onGlobalLayout() {
+                Rect r = new Rect();
+                rootLayout.getWindowVisibleDisplayFrame(r);
+                int screenHeight = rootLayout.getRootView().getHeight();
+                int keypadHeight = screenHeight - r.bottom;
+                if (keypadHeight < screenHeight * 0.15) {
+                    keypadHeight = 0;
+                }
+                if (keypadHeight != lastKbHeight) {
+                    lastKbHeight = keypadHeight;
+                    nativeOnInsetsChanged((float) r.top, 0f, 0f, 0f, (float) keypadHeight);
+                }
+            }
+        });
 
         // Continuous Choreographer frame scheduler for animations
         frameCallback = new Choreographer.FrameCallback() {
@@ -179,6 +205,32 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
         return true;
     }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        nativeOnPause();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        nativeOnResume();
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (!nativeOnBackPressed()) {
+            super.onBackPressed();
+        }
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        int nightMask = newConfig.uiMode & Configuration.UI_MODE_NIGHT_MASK;
+        nativeOnDarkModeChanged(nightMask == Configuration.UI_MODE_NIGHT_YES);
+    }
+
     // Native JNI functions implemented in hyo-core
     private native void nativeInit(Object assetManager, float density);
     private native void nativeSurfaceCreated(Surface surface);
@@ -188,4 +240,9 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
     private native void nativeOnTextInput(String text);
     private native void nativeDismissKeyboard();
     private native void nativeTickAnimation(float dt);
+    private native void nativeOnPause();
+    private native void nativeOnResume();
+    private native boolean nativeOnBackPressed();
+    private native void nativeOnDarkModeChanged(boolean isDark);
+    private native void nativeOnInsetsChanged(float top, float right, float bottom, float left, float keyboardHeight);
 }

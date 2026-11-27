@@ -45,10 +45,26 @@ android {
         }
     }
 
+    signingConfigs {
+        create("hyoRelease") {
+            val storePath = project.findProperty("HYOSIGN_STORE_FILE") as String?
+            if (storePath != null) {
+                storeFile = file(storePath)
+                keyAlias = project.findProperty("HYOSIGN_KEY_ALIAS") as String?
+                storePassword = project.findProperty("HYOSIGN_STORE_PASS") as String?
+                keyPassword = project.findProperty("HYOSIGN_KEY_PASS") as String?
+            }
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = false
-            signingConfig = signingConfigs.getByName("debug")
+            signingConfig = if (project.hasProperty("HYOSIGN_STORE_FILE")) {
+                signingConfigs.getByName("hyoRelease")
+            } else {
+                signingConfigs.getByName("debug")
+            }
         }
     }
 }

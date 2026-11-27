@@ -1,13 +1,4 @@
 {
-  "name": "myapp",
-  "package": "com.hyo.app",
-  "version": "0.1.0",
-  "description": "Hyo Mobile Application Starter",
-  "entrypoint": "src/main.lua",
-  "templateVersion": "0.1.0",
-  "platforms": [
-    "android"
-  ],
   "android": {
     "minSdk": 23,
     "targetSdk": 35
@@ -15,14 +6,24 @@
   "build": {
     "mode": "debug"
   },
+  "dependencies": {
+    "hyo-animation": "0.2.0",
+    "hyo-i18n": "0.2.0",
+    "hyo-navigation": "0.2.0",
+    "hyo-network": "0.2.0",
+    "hyo-storage": "0.2.0",
+    "hyo-ui": "0.2.0"
+  },
+  "description": "Hyo Mobile Application Starter",
+  "entrypoint": "src/main.lua",
+  "name": "myapp",
+  "package": "com.hyo.app",
   "permissions": [
     "android.permission.INTERNET"
   ],
-  "dependencies": {
-    "hyo-ui": "0.1.0",
-    "hyo-navigation": "0.1.0",
-    "hyo-animation": "0.1.0",
-    "hyo-network": "0.1.0",
-    "hyo-storage": "0.1.0"
-  }
+  "platforms": [
+    "android"
+  ],
+  "templateVersion": "0.1.0",
+  "version": "0.1.0"
 }
